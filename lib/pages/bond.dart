@@ -154,7 +154,7 @@ class _BondState extends State<Bond> {
               side: BorderSide(color: Colors.black)),
           onPressed: () {
             _db.updateUserData(
-              DataBond.tIRBonista,
+              DataBond.tREABonista,
               DataBond.tCEAEmisor,
               DataBond.metodo,
               DataBond.capitalizacion,

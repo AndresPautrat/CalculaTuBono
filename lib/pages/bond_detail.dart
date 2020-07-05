@@ -127,8 +127,8 @@ class _BondDetailState extends State<BondDetail> {
                     ),
                     Container(
                       padding: EdgeInsets.all(5),
-                      child: Text((DataBond.costeInicialEmisor * 100)
-                          .toStringAsFixed(2)),
+                      child: Text(
+                          (DataBond.costeInicialEmisor).toStringAsFixed(2)),
                     ),
                   ]),
                   TableRow(children: [
@@ -138,8 +138,8 @@ class _BondDetailState extends State<BondDetail> {
                     ),
                     Container(
                       padding: EdgeInsets.all(5),
-                      child: Text((DataBond.costeInicialBonista * 100)
-                          .toStringAsFixed(2)),
+                      child: Text(
+                          (DataBond.costeInicialBonista).toStringAsFixed(2)),
                     ),
                   ]),
                   TableRow(children: [
@@ -217,7 +217,22 @@ class _BondDetailState extends State<BondDetail> {
                   ]),
                 ],
               ),
-            )
+            ),
+            RaisedButton(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(5.0),
+                  side: BorderSide(color: Colors.black)),
+              onPressed: () {
+                Navigator.pushNamed(context, '/flujo');
+              },
+              color: Colors.black,
+              child: Text(
+                "Flujo",
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+            ),
           ],
         ),
       ),

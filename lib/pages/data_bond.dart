@@ -174,7 +174,7 @@ class DataBond {
         rate: tasaEfectivaPeriodo,
         nper: (nTotalPeriodos - 1 + 1),
         pv: bonoI[0]);
-    amort[0] = cupon[0] + cuota[0];
+    amort[0] = cuota[0] - cupon[0];
     if (1 <= nPlazos) {
       if (plazo == "Total") {
         cuota[0] = 0;

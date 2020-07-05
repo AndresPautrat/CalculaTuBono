@@ -308,15 +308,21 @@ class _FeaturesState extends State<Features> {
                   ),
                 ),
               ),
-              Checkbox(
-                  value: inflacion,
-                  activeColor: Colors.green,
-                  onChanged: (bool newValue) {
-                    setState(() {
-                      inflacion = newValue;
-                    });
-                    Text('Remember me');
-                  }),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Text("Inflacion (3.0%)"),
+                  Checkbox(
+                      value: inflacion,
+                      activeColor: Colors.green,
+                      onChanged: (bool newValue) {
+                        setState(() {
+                          inflacion = newValue;
+                        });
+                        Text('Remember me');
+                      }),
+                ],
+              )
             ]),
       ),
       bottomNavigationBar: Container(

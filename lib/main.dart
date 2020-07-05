@@ -1,3 +1,4 @@
+import 'package:calcula_tu_bono/pages/flujos_page.dart';
 import 'package:flutter/material.dart';
 
 import 'package:calcula_tu_bono/pages/bond_detail.dart';
@@ -25,5 +26,6 @@ void main() => runApp(MaterialApp(
         '/action': (context) => ActionSelection(),
         '/bond_list': (context) => BondList(),
         '/bond_detail': (context) => BondDetail(),
+        '/flujo': (contexto) => Flujo(),
       },
     ));
